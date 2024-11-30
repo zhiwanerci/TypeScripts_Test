@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "sourceMap": true,
+    "strictFunctionTypes": true,
+	  "allowUnreachableCode": true,
+	  "skipLibCheck":true,
+    "noFallthroughCasesInSwitch":true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strictBindCallApply":true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": true,
+    "useDefineForClassFields": false,
+    "incremental": true,
+    "typeRoots": [
+      "../Plugins/Puerts/Typing",
+      "./node_modules/@types",
+    ],
+    "baseUrl": "./",
+    "outDir": "../JavaScript"
+  },
+  "include": [
+    "./**/*"
+  ],
+}

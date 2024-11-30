@@ -1,0 +1,68 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../JavaScript"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "files.eol": "\n",
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "eslint.rules.customizations": [{ "rule": "no-namespace", "severity": "off" }],
+    "editor.codeActionsOnSave": {
+      "source.removeUnusedImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    },
+    "files.exclude": {
+      "**/node_modules": true
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true,
+      "**/.hg/store/**": true
+    },
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "editor.inlayHints.fontSize": 11,
+    "editor.inlayHints.padding": true,
+    "perforce.editOnFileSave": true,
+    "perforce.addOnFileCreate": true,
+    "perforce.deleteOnFileDelete": true,
+    // 文件注释
+    "fileheader.customMade": {
+      "Copyright": "2024 Tencent Inc. All rights reserved.",
+      "author": "qileisong",
+      "Date": "Do not edit", // 文件创建时间(不变)
+      "LastEditors": "qileisong",
+      "FilePath": "Do not edit",
+      "Desc":"File Desc",
+    },
+    "fileheader.configObj": {
+      "autoAdd": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "OBKoro1.korofileheader",
+	  "mjcrouch.perforce"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "attach",
+        "name": "Editor",
+        "port": 8080,
+        "outFiles": ["${workspaceRoot:TsProj}/../Content/JavaScript/**/*.js"]
+      },
+    ]
+  }
+}
